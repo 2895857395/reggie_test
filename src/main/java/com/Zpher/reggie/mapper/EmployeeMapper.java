@@ -1,12 +1,12 @@
-package com.itheima.reggie.mapper;
+package com.Zpher.reggie.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.itheima.reggie.entity.Employee;
+import com.Zpher.reggie.entity.Employee;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
  * ClassName: EmployeeMapper
- * Package: com.itheima.reggie.mapper
+ * Package: com.Zpher.reggie.mapper
  * Description:
  *
  * @Author WHU-PeterZhang

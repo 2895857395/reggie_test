@@ -1,7 +1,8 @@
-package com.itheima.reggie.filter;
+package com.Zpher.reggie.filter;
 
+import com.Zpher.reggie.common.BaseContext;
 import com.alibaba.fastjson.JSON;
-import com.itheima.reggie.common.R;
+import com.Zpher.reggie.common.R;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.util.AntPathMatcher;
 
@@ -13,7 +14,7 @@ import java.io.IOException;
 
 /**
  * ClassName: LoginCheckFilter
- * Package: com.itheima.reggie.filter
+ * Package: com.Zpher.reggie.filter
  * Description:
  *              检查用户是否已经登录
  * @Author WHU-PeterZhang
@@ -49,8 +50,13 @@ public class LoginCheckFilter implements Filter {
 
         //如果未放行，判断用户是否登录
         if(request.getSession().getAttribute("employee") != null) {
+
+            log.info("用户已登录，用户ID位", request.getSession().getAttribute("employee"));
+
+            Long empId = (Long) request.getSession().getAttribute("employee");
+            BaseContext.setCurrentId(empId);
+
             filterChain.doFilter(request, response);
-            log.info("用户已登录，请求 {} 放行", request.getRequestURL());
             return;
         }
 

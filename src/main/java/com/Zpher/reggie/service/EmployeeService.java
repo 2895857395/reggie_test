@@ -1,11 +1,11 @@
-package com.itheima.reggie.service;
+package com.Zpher.reggie.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.itheima.reggie.entity.Employee;
+import com.Zpher.reggie.entity.Employee;
 
 /**
  * ClassName: EmployeeService
- * Package: com.itheima.reggie.service
+ * Package: com.Zpher.reggie.service
  * Description:
  *
  * @Author WHU-PeterZhang

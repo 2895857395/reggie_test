@@ -1,4 +1,4 @@
-package com.itheima.reggie;
+package com.Zpher.reggie;
 
 
 import lombok.extern.slf4j.Slf4j;
@@ -8,7 +8,7 @@ import org.springframework.boot.web.servlet.ServletComponentScan;
 
 /**
  * ClassName: ReggieApplication
- * Package: com.itheima.reggie
+ * Package: com.Zpher.reggie
  * Description:
  *
  * @Author WHU-PeterZhang
